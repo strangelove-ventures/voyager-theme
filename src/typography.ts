@@ -5,7 +5,7 @@ export const fonts: Record<string, string> = {
 };
 
 export const fontSizes: Record<string, string> = {
-  xs: "0.75rem",
+  xs: "0.625rem",
   sm: "0.875rem",
   md: "1rem",
   lg: "1.125rem",
