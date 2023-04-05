@@ -6,7 +6,7 @@
   "scripts": {
     "build": "pnpm turbo run build",
     "watch": "pnpm turbo run watch",
-    "web:dev": "pnpm turbo run dev --filter=next-app",
+    "next:dev": "pnpm turbo run dev --filter=next-app",
     "next-app": "pnpm --dir apps/next-app",
     "chakra-theme": "pnpm --dir packages/chakra-theme"
   },
