@@ -1,8 +1,11 @@
 {
   "name": "@strangelovelabs/voyager-theme",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.1",
+  "main": "./dist/voyager-theme.umd.js",
+  "module": "./dist/voyager-theme.es.js",
+  "types": "./dist/index.d.ts",
+  "_type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,7 +14,7 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.5.4",
+    "@chakra-ui/react": "^2.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,13 +26,14 @@
   "devDependencies": {
     "@strangelovelabs/style-guide": "^1.3.3",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.28",
+    "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.37.0",
     "prettier": "^2.8.7",
     "typescript": "^4.9.3",
-    "vite": "^4.2.0"
+    "vite": "^4.2.1",
+    "vite-plugin-dts": "^2.2.0"
   },
   "prettier": "@strangelovelabs/style-guide/prettier"
 }

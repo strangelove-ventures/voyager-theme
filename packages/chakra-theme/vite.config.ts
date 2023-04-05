@@ -1,12 +1,14 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 const config = defineConfig({
-  plugins: [react()],
+  plugins: [react(), dts({ insertTypesEntry: true })],
   build: {
     lib: {
-      entry: "src/index.ts",
+      entry: resolve(__dirname, "src/index.ts"),
       name: "VoyagerTheme",
       fileName: (format) => `voyager-theme.${format}.js`,
     },
