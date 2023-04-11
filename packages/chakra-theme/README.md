@@ -2,10 +2,18 @@
 
 This is a custom theme for Chakra UI. It is a collection of colors, fonts, and styles that can be used to create a consistent look and feel for your application.
 
+## Before You Install
+
+You need to point your package manager to our private registry. You can do this by adding the following to your `.npmrc` file:
+
+```sh
+@strangelove-ventures:registry=https://npm.pkg.github.com
+```
+
 ## Installation
 
 ```sh
-pnpm i @strangelovelabs/voyager-theme @chakra-ui/react @emotion/react @emotion/styled framer-motion
+pnpm i @strangelove-ventures/voyager-theme @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
 
 ## Usage

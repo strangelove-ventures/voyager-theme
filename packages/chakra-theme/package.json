@@ -1,11 +1,17 @@
 {
-  "name": "@strangelovelabs/voyager-theme",
-  "private": true,
-  "version": "0.0.1",
+  "name": "@strangelove-ventures/voyager-theme",
+  "version": "0.0.3",
   "main": "./dist/voyager-theme.umd.js",
   "module": "./dist/voyager-theme.es.js",
   "types": "./dist/index.d.ts",
-  "_type": "module",
+  "files": [
+    "dist/**/*.d.ts",
+    "dist/**/*.ts",
+    "dist/**/*.udm.js",
+    "dist/**/*.es.js"
+  ],
+  "sideEffects": false,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -24,16 +30,20 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@strangelovelabs/style-guide": "^1.3.3",
+    "@strangelovelabs/style-guide": "^2.0.0",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.33",
+    "@types/react": "^18.0.34",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "prettier": "^2.8.7",
-    "typescript": "^4.9.3",
+    "typescript": "^5.0.4",
     "vite": "^4.2.1",
     "vite-plugin-dts": "^2.2.0"
   },
-  "prettier": "@strangelovelabs/style-guide/prettier"
+  "prettier": "@strangelovelabs/style-guide/prettier",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
 }

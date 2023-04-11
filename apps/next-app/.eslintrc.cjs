@@ -1,8 +1,6 @@
 // @ts-check
+const { extendEslint } = require("@strangelovelabs/style-guide");
 
-module.exports = require("@strangelovelabs/style-guide/eslint/extend")(
-  ["browser-node", "react", "next", "typescript"],
-  {
-    root: true,
-  },
-);
+module.exports = extendEslint(["browser-node", "next", "react", "typescript"], {
+  root: true,
+});
