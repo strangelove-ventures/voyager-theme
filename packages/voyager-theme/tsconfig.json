@@ -1,17 +1,8 @@
 {
-  "extends": "@strangelove-ventures/style-guide/tsconfig.json",
+  "extends": "@strangelove-ventures/style-guide/tsconfig/next.json",
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "esModuleInterop": false,
-    "isolatedModules": true,
+    "incremental": false,
     "jsx": "react-jsx",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
     "target": "esnext"
   },
   "exclude": ["node_modules"],

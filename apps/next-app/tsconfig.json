@@ -1,7 +1,5 @@
 {
   "extends": "@strangelove-ventures/style-guide/tsconfig/next.json",
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -10,5 +8,7 @@
     "plugins": [{ "name": "next" }],
     "strict": false,
     "typeRoots": ["./types"]
-  }
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"]
 }
