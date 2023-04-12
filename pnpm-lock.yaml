@@ -1952,15 +1952,6 @@ packages:
       prettier: '>=2'
       tailwindcss: '>=3'
       typescript: '>=4 || >=5'
-    peerDependenciesMeta:
-      eslint:
-        optional: true
-      prettier:
-        optional: true
-      tailwindcss:
-        optional: true
-      typescript:
-        optional: true
     dependencies:
       '@babel/core': 7.21.4
       '@babel/eslint-parser': 7.21.3(@babel/core@7.21.4)(eslint@8.38.0)
