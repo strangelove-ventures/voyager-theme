@@ -1,0 +1,45 @@
+{
+  "name": "@strangelove-ventures/voyager-theme",
+  "description": "The shareable Chakra-UI theme for Voyager projects",
+  "version": "0.0.3",
+  "repository": "https://github.com/strangelove-ventures/voyager-theme.git",
+  "homepage": "https://github.com/strangelove-ventures/voyager-theme",
+  "bugs": "https://github.com/strangelove-ventures/voyager-theme/issues",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*.d.ts",
+    "dist/**/*.js",
+    "dist/**/*.cjs",
+    "dist/**/*.mjs"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/theme-tools": "^2.0.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": ">=2",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -5,9 +5,6 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
-    "watch": {
-      "cache": false
-    },
     "dev": {
       "cache": false
     },
@@ -16,7 +13,11 @@
       "outputs": []
     },
     "lint:fix": {
+      "dependsOn": ["^build"],
       "outputs": []
+    },
+    "watch": {
+      "cache": false
     }
   }
 }
