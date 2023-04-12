@@ -1,23 +1,24 @@
 {
-  "name": "voyager-theme",
-  "version": "0.0.1",
-  "description": "The shareable Chakra-UI theme for Voyager projects",
-  "main": "index.js",
+  "name": "voyager-theme-monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "pnpm turbo run build",
-    "watch": "pnpm turbo run watch",
-    "next:dev": "pnpm turbo run dev --filter=next-app",
+    "build": "turbo build",
+    "watch": "turbo watch",
+    "next:dev": "turbo run dev --filter=next-app",
     "next-app": "pnpm --dir apps/next-app",
     "chakra-theme": "pnpm --dir packages/chakra-theme"
   },
-  "private": true,
-  "license": "MIT",
-  "prettier": "@strangelove-ventures/style-guide/prettier",
   "devDependencies": {
     "@strangelove-ventures/style-guide": "^2.0.0",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
+    "tsup": "^6.7.0",
     "turbo": "^1.9.1",
     "typescript": "^5.0.4"
-  }
+  },
+  "prettier": "@strangelove-ventures/style-guide/prettier",
+  "private": true
 }

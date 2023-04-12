@@ -1,23 +1,25 @@
 {
   "name": "@strangelove-ventures/voyager-theme",
+  "description": "The shareable Chakra-UI theme for Voyager projects",
   "version": "0.0.3",
-  "main": "./dist/voyager-theme.umd.js",
-  "module": "./dist/voyager-theme.es.js",
+  "repository": "https://github.com/strangelove-ventures/voyager-theme.git",
+  "homepage": "https://github.com/strangelove-ventures/voyager-theme",
+  "bugs": "https://github.com/strangelove-ventures/voyager-theme/issues",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**/*.d.ts",
-    "dist/**/*.ts",
-    "dist/**/*.udm.js",
-    "dist/**/*.es.js"
+    "dist/**/*.js",
+    "dist/**/*.cjs",
+    "dist/**/*.mjs"
   ],
   "sideEffects": false,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",
@@ -26,23 +28,16 @@
     "react-dom": "^18.2.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": "^2.5.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@chakra-ui/react": ">=2",
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
-    "@strangelove-ventures/style-guide": "2.0.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
-    "eslint": "^8.38.0",
-    "prettier": "^2.8.7",
-    "typescript": "^5.0.4",
-    "vite": "^4.2.1",
-    "vite-plugin-dts": "^2.2.0"
+    "typescript": "^5.0.4"
   },
-  "prettier": "@strangelove-ventures/style-guide/prettier",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"

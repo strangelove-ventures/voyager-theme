@@ -1,32 +1,29 @@
 {
   "name": "next-app",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "next dev",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "start": "next start"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@strangelove-ventures/voyager-theme": "workspace:*",
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.35",
-    "@types/react-dom": "^18.0.11",
-    "eslint": "^8.38.0",
-    "eslint-config-next": "13.3.0",
     "framer-motion": "^10.11.6",
     "next": "13.3.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "prettier": "@strangelovelabs/style-guide/prettier",
-  "devDependencies": {
-    "@strangelove-ventures/style-guide": "2.0.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.38.0"
+  },
+  "private": true
 }
