@@ -36,7 +36,7 @@ importers:
         version: 11.10.6(@emotion/react@11.10.6)(@types/react@18.0.35)(react@18.2.0)
       '@strangelove-ventures/voyager-theme':
         specifier: workspace:*
-        version: link:../../packages/chakra-theme
+        version: link:../../packages/voyager-theme
       framer-motion:
         specifier: ^10.11.6
         version: 10.11.6(react-dom@18.2.0)(react@18.2.0)
@@ -66,7 +66,7 @@ importers:
         specifier: ^8.38.0
         version: 8.38.0
 
-  packages/chakra-theme:
+  packages/voyager-theme:
     dependencies:
       '@chakra-ui/react':
         specifier: ^2.5.5
