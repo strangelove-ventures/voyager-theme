@@ -27,7 +27,7 @@
   "exclude": [
     "node_modules"
   ],
-  "extends": "@strangelovelabs/style-guide",
+  "extends": "@strangelove-ventures/style-guide",
   "references": [
     {
       "path": "./tsconfig.node.json"

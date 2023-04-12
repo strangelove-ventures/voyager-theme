@@ -12,9 +12,9 @@
   },
   "private": true,
   "license": "MIT",
-  "prettier": "@strangelovelabs/style-guide/prettier",
+  "prettier": "@strangelove-ventures/style-guide/prettier",
   "devDependencies": {
-    "@strangelovelabs/style-guide": "^2.0.0",
+    "@strangelove-ventures/style-guide": "^2.0.0",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7",
     "turbo": "^1.9.0",

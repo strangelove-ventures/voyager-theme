@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",
+    "@chakra-ui/theme-tools": "^2.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -30,7 +31,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@strangelovelabs/style-guide": "^2.0.0",
+    "@strangelove-ventures/style-guide": "2.0.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.34",
     "@types/react-dom": "^18.0.11",
@@ -41,7 +42,7 @@
     "vite": "^4.2.1",
     "vite-plugin-dts": "^2.2.0"
   },
-  "prettier": "@strangelovelabs/style-guide/prettier",
+  "prettier": "@strangelove-ventures/style-guide/prettier",
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
