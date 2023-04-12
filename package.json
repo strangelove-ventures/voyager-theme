@@ -9,7 +9,7 @@
     "watch": "turbo watch",
     "next:dev": "turbo run dev --filter=next-app",
     "next-app": "pnpm --dir apps/next-app",
-    "chakra-theme": "pnpm --dir packages/chakra-theme"
+    "voyager-theme": "pnpm --dir packages/voyager-theme"
   },
   "devDependencies": {
     "@strangelove-ventures/style-guide": "^2.0.0",
