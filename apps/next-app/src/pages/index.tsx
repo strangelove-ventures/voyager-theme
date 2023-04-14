@@ -30,7 +30,7 @@ const Page: NextPage = () => {
         accusantium aspernatur natus voluptatum quidem voluptas excepturi numquam, distinctio quam cumque, illo itaque
         nemo maxime dicta tenetur fugiat fugit quisquam unde illum! Doloremque in, qui totam porro alias modi dolorem?
       </Text>
-      <Button>Look, a button!</Button>
+      <Button isDisabled>Look, a button!</Button>
     </Container>
   );
 };

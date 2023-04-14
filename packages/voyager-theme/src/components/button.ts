@@ -6,7 +6,14 @@ export const Button: ComponentStyleConfig = {
   },
   variants: {
     primary: {
-      colorScheme: "--chakra-colors-background",
+      backgroundColor: "pistachio.400",
+      color: "black",
+      _hover: {
+        backgroundColor: "pistachio.400",
+      },
+      _disabled: {
+        backgroundColor: "#5C8562",
+      },
     },
   },
 };
