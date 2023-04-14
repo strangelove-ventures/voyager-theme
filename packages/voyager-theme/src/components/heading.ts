@@ -1,6 +1,6 @@
-import { defineStyleConfig } from "@chakra-ui/react";
+import type { ComponentStyleConfig } from "@chakra-ui/react";
 
-export const Heading = defineStyleConfig({
+export const Heading: ComponentStyleConfig = {
   baseStyle: {
     fontFamily: "heading",
     fontWeight: "bold",
@@ -57,4 +57,4 @@ export const Heading = defineStyleConfig({
   defaultProps: {
     size: "2xl",
   },
-});
+};

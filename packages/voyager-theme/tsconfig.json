@@ -1,10 +1,30 @@
 {
-  "extends": "@strangelove-ventures/style-guide/tsconfig/next.json",
+  "extends": "@strangelove-ventures/style-guide/tsconfig.json",
   "compilerOptions": {
     "incremental": false,
     "jsx": "react-jsx",
-    "target": "esnext"
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": false,
+    "isolatedModules": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "strictNullChecks": true
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
