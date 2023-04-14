@@ -1,5 +1,5 @@
-import { Container, Heading, Text } from "@chakra-ui/react";
-import { NextPage } from "next";
+import { Button, Container, Heading, Text } from "@chakra-ui/react";
+import type { NextPage } from "next";
 import Head from "next/head";
 
 const Page: NextPage = () => {
@@ -30,6 +30,7 @@ const Page: NextPage = () => {
         accusantium aspernatur natus voluptatum quidem voluptas excepturi numquam, distinctio quam cumque, illo itaque
         nemo maxime dicta tenetur fugiat fugit quisquam unde illum! Doloremque in, qui totam porro alias modi dolorem?
       </Text>
+      <Button>Look, a button!</Button>
     </Container>
   );
 };

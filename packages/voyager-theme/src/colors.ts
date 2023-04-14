@@ -1,6 +1,7 @@
 import type { Colors } from "@chakra-ui/react";
 
 export const colors: Colors = {
+  background: "#010F03",
   olive: {
     50: "#F4FBF4",
     100: "#EDF4ED",
