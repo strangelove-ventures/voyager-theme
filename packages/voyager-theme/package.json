@@ -1,7 +1,7 @@
 {
   "name": "@strangelove-ventures/voyager-theme",
   "description": "The shareable Chakra-UI theme for Voyager projects",
-  "version": "0.1.3",
+  "version": "0.2.1",
   "repository": "https://github.com/strangelove-ventures/voyager-theme.git",
   "homepage": "https://github.com/strangelove-ventures/voyager-theme",
   "bugs": "https://github.com/strangelove-ventures/voyager-theme/issues",
