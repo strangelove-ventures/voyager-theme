@@ -15,5 +15,16 @@ export const Button: ComponentStyleConfig = {
         backgroundColor: "#5C8562",
       },
     },
+    secondary: {
+      backgroundColor: "#7DA47E",
+      color: "pistachio.300",
+      _hover: {
+        backgroundColor: "#4C654D",
+      },
+      _disabled: {
+        backgroundColor: "#1F2C1F",
+        color: "#658465",
+      },
+    },
   },
 };

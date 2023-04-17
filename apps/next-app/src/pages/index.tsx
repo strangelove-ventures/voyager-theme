@@ -1,4 +1,4 @@
-import { Button, Container, Heading, Text } from "@chakra-ui/react";
+import { Button, Container, Flex, Heading, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -30,7 +30,14 @@ const Page: NextPage = () => {
         accusantium aspernatur natus voluptatum quidem voluptas excepturi numquam, distinctio quam cumque, illo itaque
         nemo maxime dicta tenetur fugiat fugit quisquam unde illum! Doloremque in, qui totam porro alias modi dolorem?
       </Text>
-      <Button isDisabled>Look, a button!</Button>
+      <Flex flexDirection="column" alignItems="flex-start" gap={2}>
+        <Button>Look, a primary button!</Button>
+        <Button isDisabled>Look, a disabled primary button!</Button>
+        <Button variant="secondary">Look, a secondary button!</Button>
+        <Button variant="secondary" isDisabled>
+          Look, a disabled secondary button!
+        </Button>
+      </Flex>
     </Container>
   );
 };
