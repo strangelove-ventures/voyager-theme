@@ -5,7 +5,6 @@ export const styles: GlobalStyles = {
     "html, body": {
       backgroundColor: "background",
       color: "text",
-      fontSize: "lg",
     },
   },
 };

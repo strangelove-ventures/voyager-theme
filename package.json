@@ -10,7 +10,7 @@
     "next:dev": "turbo run dev --filter=next-app",
     "next-app": "pnpm --dir apps/next-app",
     "voyager-theme": "pnpm --dir packages/voyager-theme",
-    "publish:voyager-theme": "pnpm publish --filter=@strangelove-ventures/voyager-theme --no-git-checks"
+    "publish:theme": "pnpm publish --filter=@strangelove-ventures/voyager-theme --no-git-checks"
   },
   "devDependencies": {
     "@strangelove-ventures/style-guide": "^2.0.0",
